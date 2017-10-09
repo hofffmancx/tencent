@@ -1,0 +1,79 @@
+.header{
+  width: 100%;
+  height: 60px;
+  border: 2px solid black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background: red;
+}
+
+.nav{
+  width: 1240px;
+  height: 26px;
+  position: absolute;  /*为何用absolute不用fixed?*/
+  left:50%;
+  top: 66px;
+  margin-left: -620px;    /*宽度的一半，目的是要让其居中。 待整理知识点*/
+  background: blue;
+}
+
+.banner{
+  width: 100%;
+  height: 577px;
+  background: yellow;
+}
+
+.content{
+  width: 1220px;
+  min-height: 300px;
+  background: orange;
+}
+
+.footer{
+  width: 100%;
+  height: 266px;
+  background: #eeeeee;
+}
+
+h1{
+  padding-top: 18px;  /*a标签下移，但是背景图并没有下移，需要单独拿出h1设置*/
+  float:left;
+}
+
+h1 a{
+  display: block;
+  width: 135px;
+  height: 34px;
+  background: url(../img/logo.png) -1px -37px no-repeat;
+  margin-left: 63px;
+}
+
+.header_form{
+  width:580px;
+  height: 40px;
+  float:left;
+  margin-left:196px;
+  padding-top: 13px;
+}
+
+.header_form form .form_input{
+    width: 475px;
+    height: 40px;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+}
+
+.header_form form .form_input1{
+  width: 105px;
+  height: 40px;
+  border: none;
+  float: left;
+}
+
+.header_form input{
+  outline: none;
+}
