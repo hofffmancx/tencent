@@ -6,7 +6,6 @@
   left: 0;
   top: 0;
   z-index: 2;
-  background: red;
 }
 
 .nav{
@@ -14,20 +13,24 @@
   height: 26px;
   position: absolute;  /*为何用absolute不用fixed?*/
   left:50%;
-  top: 66px;
+  top: 64px;
   margin-left: -620px;    /*宽度的一半，目的是要让其居中。 待整理知识点*/
-  background: blue;
+  background: white;
 }
 
 .banner{
   width: 100%;
   height: 577px;
-  background: yellow;
+  background: url(../img/banner.jpg) center center no-repeat;
+  background-size: 100% 100%;
 }
 
 .content{
-  width: 1220px;
+  width: 1180px;
   min-height: 300px;
+  margin: -100px auto 0;
+  padding: 20px;
+  position: relative;
   background: orange;
 }
 
@@ -72,8 +75,171 @@ h1 a{
   height: 40px;
   border: none;
   float: left;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 40px;    /* 行高：用来调整字体在行中的位置 */
+  background: #ff8018;
+  color: white;
 }
 
 .header_form input{
   outline: none;
+}
+
+.header_nav{
+  width: 320px;
+  height: 40px;
+  float: left;
+  padding-top: 15px;
+}
+
+.header_nav ul .li_img{
+  width:40px;
+  height:40px;
+  float: right;
+}
+
+.li_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav ul li{
+  float:left;
+  margin-left: 17px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 26px;
+}
+
+.banner ul{
+  position: absolute;
+  left: 1053px;
+  top: 128px;
+}
+
+.banner ul li a{
+  display: block;
+  width: 240px;
+  height: 31px;
+  background: #fff;
+  color: #000;
+  font-size: 13px;
+  line-height: 31px;
+  text-indent: 15px;
+}
+
+.banner ul li a:hover{
+  color: white;
+  background: orange;
+}
+
+.content .content_h2{
+  width: 100%;
+  height: 51px;
+  font-size: 26px;
+}
+
+.content .content_h2 span{
+  font-size: 12px;
+  color: #666;
+  line-height: 51px;
+}
+
+.content .content_box{
+  width: 460px;
+  height: 360px;
+  position: relative;
+  top: 0;
+  left: 0;
+  float: left;
+}
+
+.content_box img{
+  width: 100%;
+  height: 100%;
+}
+
+.content .content_box p{
+  position: absolute;
+  left: 35px;
+  top: 300px;
+  font-size: 15px;
+  color: yellow;
+}
+
+.content .content_box p span{
+  color: #ccc;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.content .content_box1 ul li a{
+  float:left;
+  margin-left: 20px;
+  display: block;
+  width: 220px;
+  height: 191px;
+}
+
+.content .content_box1 ul li a img{
+  width: 100%;
+  height: 123px;
+}
+
+.content .content_box1 ul li a p{
+  width: 100%;
+  line-height: 21px;
+  font-size: 12px;
+  color: black;
+}
+
+.content .content_box1 ul li a p span{
+  display: block;
+  line-height: 21px;
+  font-size: 11px;
+  color: grey;
+}
+
+.content_box2{
+  width: 1180px;
+  min-height: 250px;
+}
+
+.content_box2 h2{
+  width: 100%;
+  font-size: 27px;
+  padding-top: 14px;
+  height: 61px;
+  float: left;
+}
+
+.content_box2 ul li a{
+  display: block;
+  width: 220px;
+  height: 191px;
+  margin-left: 20px;
+  float: left;
+}
+
+.content_box2 ul li img{
+  width: 220px;
+  height: 123px;
+}
+
+.content_box2 ul li .content_a {
+  margin-left: 0;
+}
+
+.content_box2 ul li a p{
+  font-size: 12px;
+  line-height: 21px;
+  color: #000;
+}
+
+.content_box2 ul li a p span{
+  font-size: 14px;
+  color: #999;
+  line-height: 25px;
 }

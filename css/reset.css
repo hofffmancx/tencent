@@ -3,7 +3,7 @@
 body,h1,h2,h3,h4,h5,h6,p,ol,ul{
   margin: 0;
 }
-ol,ul,p{
+ol,ul,p,input{
   padding: 0;
 }
 ol,ul{
@@ -18,4 +18,12 @@ img{
 }
 em{
   font-style: normal;
+}
+
+.clear:after{
+  content:"";display: block;clear: both;
+}
+
+clear{
+  zoom:1;
 }
